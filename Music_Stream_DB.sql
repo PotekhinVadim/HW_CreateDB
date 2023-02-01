@@ -11,7 +11,7 @@ create table if not exists Artists (
 create table if not exists Albums (
 	Album_ID SERIAL primary key,
 	Album_Name VARCHAR(100) not null,
-	Album_Year smallint not null check (Album_Year > 0),
+	Album_Year smallint not null check (Album_Year > 0)
 );
 
 create table if not exists Tracks (
@@ -24,7 +24,7 @@ create table if not exists Tracks (
 create table if not exists Mixtapes (
 	Mixtape_ID SERIAL primary key,
 	Mixtape_Name VARCHAR(100) not null,
-	Mixtape_Year smallint not null check (Album_Year > 0),
+	Mixtape_Year smallint not null check (Mixtape_Year > 0)
 );
 
 create table if not exists Genres_Artists (
