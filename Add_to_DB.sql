@@ -111,3 +111,26 @@ values	(3, 1),
 		(8, 8),
 		(12, 8),
 		(17, 8);
+	
+insert into albums(album_name, album_year)
+values	('Attention', 2019),
+		('Nowhere', 2020);
+	
+insert into artists(artist_name)
+values	('Chimino');
+
+insert into genres_artists
+values	(4, 9);
+	
+insert into tracks(track_name, track_lenght, album_id)
+values	('uno', 88, 9),
+		('dos', 232, 9),
+		('tres', 123, 9),
+		('quattro', 543, 9),
+		('cinco', 435, 10),
+		('seis', 18, 10),
+		('alle', 234, 10);
+	
+insert into artists_albums
+values	(9, 9),
+		(9, 10);
